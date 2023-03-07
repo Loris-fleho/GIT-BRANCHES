@@ -2,7 +2,7 @@
 
 # Exercise 1: Clone a Git repository
 
-1. Choose the repository created on GitHub or GitLab by one of your teammates, share its web URL.
+1. Choose the repository created on GitHub or GitLab by one of your teammates, share its web URL.
 ```
 https://github.com/Loris-fleho/GIT-BRANCHES
 ```
@@ -84,6 +84,7 @@ output:
 checkout the master branch
 ```
 git checkout master
+git pull GIT-BRANCHES master
 ```
 D       .gitignore
 D       .private
