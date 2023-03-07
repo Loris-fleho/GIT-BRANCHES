@@ -49,3 +49,12 @@ git checkout FLEHO
 ### Q3
 git merge master
 ### Q4
+git commit -m "Ajouter les membres d'équipe' names to README.md"
+git push depôt_distant FLEHO
+
+## Exercise 6: Delete a branch
+### Q1
+git checkout master
+git branch -D FLEHO
+### Q2
+git push depôt_distant --delete FLEHO
