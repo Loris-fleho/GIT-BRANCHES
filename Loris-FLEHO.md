@@ -13,7 +13,6 @@ git push -u depôt_distant FLEHO
 
 ## Exercise 3: Merge simple changes
 ### Q1 
-git branch master
 git checkout master
 git pull depôt_distant master
 git merge FLEHO
