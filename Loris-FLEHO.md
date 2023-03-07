@@ -9,15 +9,15 @@ git add Loris_FLEHO.txt
 ### Q3
 git commit -m "Ajout d'un nouveau fichier texte nommé Loris_FLEHO"
 ### Q4
-git push -u depôt_distant FLEHO
+git push -u GIT-BRANCHES FLEHO
 
 ## Exercise 3: Merge simple changes
 ### Q1 
 git checkout master
-git pull depôt_distant master
+git pull GIT-BRANCHES master
 git merge FLEHO
 ### Q2
-git push depôt_distant master
+git push GIT-BRANCHES master
 
 ## Exercise 4: Resolve merge conflicts
 ### Q1 
@@ -31,18 +31,18 @@ git add README.md
 git commit -m "Modifications des lignes 2 à 6 de README.md"
 ### Q4
 git checkout master
-git pull depôt_distant master
+git pull GIT-BRANCHES master
 ### Q5
 git checkout FLEHO
 git merge master
 ### Q6
 #### Si des conflits apparaissent, il faut éditer le fichier README.md et résoudre les conflits manuellement en ordonnant les paragraphes par ordre alphabétique.
 ### Q7
-git push origin master
+git push GIT-BRANCHES master
 
 ## Exercise 5: Take latest changes from master in local branch
 ### Q1
-git pull depôt_distant master
+git pull GIT-BRANCHES master
 cat README.md
 ### Q2
 git checkout FLEHO
@@ -50,11 +50,11 @@ git checkout FLEHO
 git merge master
 ### Q4
 git commit -m "Ajouter les membres d'équipe' names to README.md"
-git push depôt_distant FLEHO
+git push GIT-BRANCHES FLEHO
 
 ## Exercise 6: Delete a branch
 ### Q1
 git checkout master
 git branch -D FLEHO
 ### Q2
-git push depôt_distant --delete FLEHO
+git push GIT-BRANCHES --delete FLEHO
