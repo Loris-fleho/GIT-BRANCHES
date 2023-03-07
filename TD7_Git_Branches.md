@@ -9,6 +9,7 @@ https://github.com/Loris-fleho/GIT-BRANCHES
 
 2. For the repository owner... Ensure there is at least a README.md
 file, it appears on the project frontpage in the web UI.
+OK
 
 
 3. Using only command-line in your Linux shell, clone it to a local repository.
