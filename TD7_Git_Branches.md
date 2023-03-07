@@ -287,10 +287,6 @@ git push GIT-BRANCHES RIBOULET
 
 # Exercise 8: Create and approve a Merge/Pull Request
 
-2. Ask another team member to check there is a single commit and merge the Merge/Pull Request:
-```
-github pull-request
-```
 
 ```
 git checkout RIBOULET
@@ -303,67 +299,3 @@ git push GIT-BRANCHES
 
 ```
 
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
