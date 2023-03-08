@@ -19,4 +19,5 @@ For example, if you want to change the last three commit messages, or any of the
 $ git rebase -i HEAD~3
 Remember again that this is a rebasing command — every commit in the range HEAD~3..HEAD with a changed message and all of its descendants will be rewritten. Don’t include any commit you’ve already pushed to a central server — doing so will confuse other developers by providing an alternate version of the same change.
 
-Running this command gives you a list of commits in your text editor that looks something like this:
+Running this command gives you a list of commits in your text editor that looks something like this
+:
