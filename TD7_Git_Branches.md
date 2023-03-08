@@ -2,9 +2,9 @@
 
 # Exercise 1: Clone a Git repository
 
-1. Choose the repository created on GitHub or GitLab by one of your teammates, share its web URL.
+# 1. Choose the repository created on GitHub or GitLab by one of your teammates, share its web URL.
 ```
-https://github.com/Loris-fleho/GIT-BRANCHES
+https://github.com/Loris-fleho/GIT-BRANCHES.git
 ```
 
 2. For the repository owner... Ensure there is at least a README.md
@@ -14,7 +14,7 @@ OK
 
 3. Using only command-line in your Linux shell, clone it to a local repository.
 ```
-git clone https://github.com/Loris-fleho/GIT-BRANCHES
+git clone https://github.com/Loris-fleho/GIT-BRANCHES.git
 ```
 
 4. For the repository owner... Give push rights to your teammates :
@@ -27,40 +27,37 @@ we did it manually
 
 # Exercise 2: Push files to common repository
 
-1. Create a branch named after you.
+# 1. Create a branch named after you.
 ```
-git branch RIBOULET
-git checkout master
-git checkout GIT-BRANCHES
+git branch DYLAN
+```
+ou pour accéder directement à la branche en meme temps que de la créer
+```
+git checkout -b DYLAN
 ```
 
-pour naviguer sur Linux
+pour naviguer dans les différentes branches
 ```
-git checkout RIBOULET
-cd .. 
+git checkout <nom_de_la_branche>
 ```
-pour revenir en arrière dans les branches
 
-2. Create a new text file named after you (with the content you want).
+# 2. Create a new text file named after you (with the content you want).
 ```
-> TD7_Git_Branches.txt
-vim TD7_Git_Branches.txt
-git add TD7_Git_Branches.txt
+> Dylan.txt
+echo "New content" Dylan.txt
 ```
 :wq pour sauvegarder
 
-3. Commit this new file.
+# 3. Commit this new file.
 ```
-git commit -m "Added TD7_git_branch"
+git add Dylan.txt
+git commit -m "Add new file named after me"
+```
 
+# 4. Push your branch to the remote repository.
 ```
-
-4. Push your branch to the remote repository.
+git push -u origin DYLAN
 ```
-git push -u GIT-BRANCHES RIBOULET
-```
-Branch 'RIBOULET' set up to track remote branch 'RIBOULET' from 'GIT-BRANCHES'.
-Everything up-to-date
 
 
 Check in the web UI you see your branch (there is a button with ’master’ as
