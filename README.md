@@ -6,4 +6,5 @@ For example, if you want to change the last three commit messages, or any of the
 
 $ git rebase -i HEAD~3
 
+Dylan Riboulet
 
