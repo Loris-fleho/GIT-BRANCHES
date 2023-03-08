@@ -2,14 +2,14 @@
 
 # Exercise 1: Clone a Git repository
 
-# 3. Using only command-line in your Linux shell, clone it to a local repository.
+### 3. Using only command-line in your Linux shell, clone it to a local repository.
 ```
 git clone https://github.com/Loris-fleho/GIT-BRANCHES.git
 ```
 
 # Exercise 2: Push files to common repository
 
-# 1. Create a branch named after you.
+### 1. Create a branch named after you.
 ```
 git branch DYLAN
 ```
@@ -23,20 +23,20 @@ pour naviguer dans les différentes branches
 git checkout <nom_de_la_branche>
 ```
 
-# 2. Create a new text file named after you (with the content you want).
+### 2. Create a new text file named after you (with the content you want).
 ```
 > Dylan.txt
 echo "New content" Dylan.txt
 ```
 :wq pour sauvegarder
 
-# 3. Commit this new file.
+### 3. Commit this new file.
 ```
 git add Dylan.txt
 git commit -m "Add new file named after me"
 ```
 
-# 4. Push your branch to the remote repository.
+### 4. Push your branch to the remote repository.
 ```
 git push -u origin DYLAN
 ```
@@ -58,13 +58,13 @@ output:
 
 # Exercise 3: Merge simple changes
 
-# 1. Merge your branch into the ’master’ branch
+### 1. Merge your branch into the ’master’ branch
 ```
 git checkout DYLAN
 git merge main
 ```
  
-# 2. Push your changes in the ’master’ branch to the remote repository.
+### 2. Push your changes in the ’master’ branch to the remote repository.
 ```
 git push origin master
 ```
@@ -81,13 +81,13 @@ git log --oneline
 
 # Exercise 4: Resolve merge conflicts
 
-# 1. Switch back to your own branch (not including the latest changes from
+### 1. Switch back to your own branch (not including the latest changes from
 the master branch).
 ```
  git checkout RIBOULET
 ```
 
-# 2. Edit the lines 2 to 6 of the README.md file with a text you like (a
+### 2. Edit the lines 2 to 6 of the README.md file with a text you like (a
 poem, a quote, some clever code...). It can be any readable text, it may
 be incomplete, it must just take about 5 lines and be different from your
 teammates. It must start on line 2 to trigger conflicts between team
@@ -97,13 +97,13 @@ vim README.md
 "This is amazing"
 ```
 
-# 3. Commit this change
+### 3. Commit this change
 ```
 git add README.MD
 git commit -m "Add text to README.md"
 ```
 
-# 4. Pull latest status from the remote repository ’master’ branch into your
+### 4. Pull latest status from the remote repository ’master’ branch into your
 local ’master’ branch.
 ```
 git checkout main
@@ -111,19 +111,19 @@ git pull origin main
 ```
 
 
-5. Merge your branch into the local ’master’ branch.
+### 5. Merge your branch into the local ’master’ branch.
 ```
 git merge DYLAN
 ```
 
-6. If there are conflicts, we want the paragraph to appear in alphabetical
+### 6. If there are conflicts, we want the paragraph to appear in alphabetical
 order in the final README.md file.
 ```
 git add README.md
 git commit -m "Merge DYLAN into main"
 ```
 
-7. Push your changes in the ’master’ branch to the remote repository.
+### 7. Push your changes in the ’master’ branch to the remote repository.
 ```
 git push origin master
 ```
