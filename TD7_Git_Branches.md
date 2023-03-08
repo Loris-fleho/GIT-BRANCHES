@@ -2,28 +2,10 @@
 
 # Exercise 1: Clone a Git repository
 
-# 1. Choose the repository created on GitHub or GitLab by one of your teammates, share its web URL.
-```
-https://github.com/Loris-fleho/GIT-BRANCHES.git
-```
-
-2. For the repository owner... Ensure there is at least a README.md
-file, it appears on the project frontpage in the web UI.
-OK
-
-
-3. Using only command-line in your Linux shell, clone it to a local repository.
+# 3. Using only command-line in your Linux shell, clone it to a local repository.
 ```
 git clone https://github.com/Loris-fleho/GIT-BRANCHES.git
 ```
-
-4. For the repository owner... Give push rights to your teammates :
-— on GitHub got to "Settings", "Manage access", "Invite a collaborator"
-see https ://docs.github.com/en/github/setting-up-and-managing-yourgithub-user-account/inviting-collaborators-to-a-personal-repository
-— on GitLab got to "Members", "Invite member"
-see https ://docs.gitlab.com/ee/user/project/members/
-we did it manually
-
 
 # Exercise 2: Push files to common repository
 
