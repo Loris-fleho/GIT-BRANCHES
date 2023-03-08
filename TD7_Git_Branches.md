@@ -81,63 +81,47 @@ git log --oneline
 
 # Exercise 4: Resolve merge conflicts
 
-1. Switch back to your own branch (not including the latest changes from
+# 1. Switch back to your own branch (not including the latest changes from
 the master branch).
 ```
  git checkout RIBOULET
 ```
 
-2. Edit the lines 2 to 6 of the README.md file with a text you like (a
+# 2. Edit the lines 2 to 6 of the README.md file with a text you like (a
 poem, a quote, some clever code...). It can be any readable text, it may
 be incomplete, it must just take about 5 lines and be different from your
 teammates. It must start on line 2 to trigger conflicts between team
 members
 ```
-> README.md
 vim README.md
+"This is amazing"
 ```
 
-3. Commit this change
+# 3. Commit this change
 ```
-git commit -am "Added my paragraph"
+git add README.MD
+git commit -m "Add text to README.md"
 ```
 
-4. Pull latest status from the remote repository ’master’ branch into your
+# 4. Pull latest status from the remote repository ’master’ branch into your
 local ’master’ branch.
 ```
- git pull GIT-BRANCHES master
+git checkout main
+git pull origin main
 ```
-From GIT-BRANCHES
- * branch            master     -> FETCH_HEAD
-hint: You have divergent branches and need to specify how to reconcile them.
-hint: You can do so by running one of the following commands sometime before
-hint: your next pull:
-hint: 
-hint:   git config pull.rebase false  # merge (the default strategy)
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint: 
-hint: You can replace "git config" with "git config --global" to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
-fatal: Need to specify how to reconcile divergent branches
+
 
 5. Merge your branch into the local ’master’ branch.
 ```
-git merge RIBOULET
+git merge DYLAN
 ```
 
 6. If there are conflicts, we want the paragraph to appear in alphabetical
 order in the final README.md file.
 ```
-git mergetool
+git add README.md
+git commit -m "Merge DYLAN into main"
 ```
-This message is displayed because 'merge.tool' is not configured.
-See 'git mergetool --tool-help' or 'git help config' for more details.
-'git mergetool' will now attempt to use one of the following tools:
-tortoisemerge emerge vimdiff nvimdiff
-No files need merging
 
 7. Push your changes in the ’master’ branch to the remote repository.
 ```
