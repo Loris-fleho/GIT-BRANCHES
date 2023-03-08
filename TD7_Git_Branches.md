@@ -41,7 +41,6 @@ git commit -m "Add new file named after me"
 git push -u origin DYLAN
 ```
 
-
 Check in the web UI you see your branch (there is a button with ’master’ as
 default).
 ```
@@ -59,34 +58,17 @@ output:
 
 # Exercise 3: Merge simple changes
 
-1. Merge your branch into the ’master’ branch
-
-checkout the master branch
+# 1. Merge your branch into the ’master’ branch
 ```
-git checkout master
-git pull GIT-BRANCHES master
+git checkout DYLAN
+git merge main
 ```
-D       .gitignore
-D       .private
-D       exclude
-D       function.py
-D       main.py
-M       readme.md
-D       requirements.txt
-Switched to branch 'master'
-
-```
-git merge RIBOULET
-```
-Updating 955530b..13ddf9f
-Fast-forward
- TD7_git_branch.txt | 0
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 TD7_git_branch.txt
  
+# 2. Push your changes in the ’master’ branch to the remote repository.
 ```
-git push GIT-BRANCHES master
+git push origin master
 ```
+
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To GIT-BRANCHES
  * [new branch]      master -> master
