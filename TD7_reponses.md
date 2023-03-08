@@ -46,15 +46,6 @@ default).
 ```
 git log --graph --oneline
 ```
-output: 
-* 13ddf9f (HEAD -> RIBOULET) Added TD7_git_branch
-* 955530b (master, abc) Add description
-* 78adfdd New file
-* 36ab98f Update
-* 83586f1 New files
-* a195580 Add function.py file
-* ec58fec Add main.py file
-* b5bdd6e Add readme file
 
 # Exercise 3: Merge simple changes
 
@@ -66,12 +57,8 @@ git merge main
  
 ### 2. Push your changes in the ’master’ branch to the remote repository.
 ```
-git push origin master
+git push origin main
 ```
-
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-To GIT-BRANCHES
- * [new branch]      master -> master
 
 
 ```
@@ -180,7 +167,7 @@ git pull origin master
 
 ### 2. Create a new local branch named after you and switch to it.
 ```
-git checkout -b RIBOULET_2
+git checkout -b RIBOULET
 ```
 
 
