@@ -3,3 +3,4 @@ To modify a commit that is farther back in your history, you must move to more c
 For example, if you want to change the last three commit messages, or any of the commit messages in that group, you supply as an argument to git rebase -i the parent of the last commit you want to edit, which is HEAD~2^ or HEAD~3. It may be easier to remember the ~3 because you’re trying to edit the last three commits, but keep in mind that you’re actually designating four commits ago, the parent of the last commit you want to edit:
 
 $ git rebase -i HEAD~3
+
