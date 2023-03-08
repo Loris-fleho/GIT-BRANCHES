@@ -129,44 +129,42 @@ git push origin master
 ```
 
 
-# Exercise 5: Take latest changes from master in local branch
+### Exercise 5: Take latest changes from master in local branch
 
-1. Pull the latest changes in the ’master’ branch, check the README.md
-is up-to-date (contains all the paragraphs and the new line).
+### 1. Pull the latest changes in the ’master’ branch, check the README.md is up-to-date (contains all the paragraphs and the new line).
 ```
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 cat README.md
 ```
 
-2. Switch back to your own branch (not including the latest changes from
-the master branch).
+### 2. Switch back to your own branch (not including the latest changes fromthe master branch).
 ```
- git checkout RIBOULET
-```
-
-3. Merge the changes from ’master’ to your own branch.
-```
-git merge master
+ git checkout DYLAN
 ```
 
-4. Commit this change.
+### 3. Merge the changes from ’master’ to your own branch.
 ```
-git add README.md
-git commit -am "New changes"
+git merge main
+```
+
+### 4. Commit this change.
+```
+git commit -m "Merge changes from master"
+git push origin DYLAN
 ```
 
 
 # Exercise 6: Delete a branch
 
-1. Delete your branch on local repository
+### 1. Delete your branch on local repository
 ```
 git branch -d RIBOULET
 ```
 
-2. Delete your branch on distant repository.
+### 2. Delete your branch on distant repository.
 ```
-git push GIT-BRANCHES --delete RIBOULET
+git push origin --delete RIBOULET
 ```
 
 
@@ -174,75 +172,77 @@ git push GIT-BRANCHES --delete RIBOULET
 # Exercise 7: Rebase interactively to have a clean history
 
 
-1. Pull the latest changes in the ’master’ branch.
+### 1. Pull the latest changes in the ’master’ branch.
 ```
 git checkout master
 git pull origin master
 ```
 
-2. Create a new local branch named after you and switch to it.
+### 2. Create a new local branch named after you and switch to it.
 ```
 git checkout -b RIBOULET_2
 ```
 
 
-3.
+### 3.
 ```
-git rm README.md
+echo "" > README.md
+git add README.md
 git commit -m "Clear the whole file, removing all text."
+git push origin RIBOULET
 
 echo "Git interactive rebase" > README.md
 git add README.md
 git commit -m "Add title line 'Git interactive rebase'."
+git push origin RIBOULET
 
 curl https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History | head -n 14 > README.md
 git add README.md
 git commit -m "Copy the first paragraph from https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History."
+git push origin RIBOULET
 
 curl https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History | head -n 24 | tail -n 10 >> README.md
 git add README.md
 git commit -m "Add the second paragraph from the same page."
+git push origin RIBOULET
 
 curl https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History | head -n 53 | tail -n 16 >> README.md
 git add README.md
 git commit -m "Add the first and second paragraphs from the 'Changing Multiple Commit Messages' section in the same page."
+git push origin RIBOULET
 
 sed -i '16d' README.md
 git add README.md
 git commit -m "Remove the second paragraph from your file."
+git push origin RIBOULET
 
 sed -i '4i Changing Multiple Commit Messages' README.md
 git add README.md
 git commit -m "Add missing title 'Changing Multiple Commit Messages' on a line just before the two paragraphs your copied."
+git push origin RIBOULET
 
 echo "RIBOULET" >> README.md
 git add README.md
 git commit -m "Add a final line with your name or alias."
+git push origin RIBOULET
 ```
 
-4. Use interactive rebase to have a single commit with message "Explain git
+### 4. Use interactive rebase to have a single commit with message "Explain git
 interactive rebase."
 ```
-git rebase -i HEAD~8
+git rebase -i HEAD~3
 ```
 
-5. Push your branch on the remote repository
+### 5. Push your branch on the remote repository
 ```
-git push GIT-BRANCHES RIBOULET
+git push origin RIBOULET
 ```
 
 
 # Exercise 8: Create and approve a Merge/Pull Request
 
+On GitHub
 
-```
-git checkout RIBOULET
-git log --oneline
-```
+Pull requests then Merge...
 
-```
-git rebase -i HEAD~1
-git push GIT-BRANCHES
-
-```
 
