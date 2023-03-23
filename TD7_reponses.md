@@ -112,7 +112,7 @@ git commit -m "Merge DYLAN into main"
 
 ### 7. Push your changes in the ’master’ branch to the remote repository.
 ```
-git push origin master
+git push origin main
 ```
 
 
@@ -161,8 +161,8 @@ git push origin --delete RIBOULET
 
 ### 1. Pull the latest changes in the ’master’ branch.
 ```
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 ```
 
 ### 2. Create a new local branch named after you and switch to it.
